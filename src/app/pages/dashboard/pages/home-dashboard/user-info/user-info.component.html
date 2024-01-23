@@ -1,0 +1,16 @@
+<div class="user-info-panel">
+    <div class="user-info-panel__avatar mr-16">
+        <img [src]="userInfo.userAvatar" width="100%" height="100%">
+    </div>
+    <div class="user-info-panel__info">
+        <div class="user-info-panel__full-name">
+            <label class="user-info-panel--bold-text">{{ userInfo.userName }}</label>
+        </div>
+        <div class="user-info-panel__user-id">
+            <label class="user-info-panel__user-id-label">ID пользователя: </label>
+            <label class="user-info-panel__user-id-value user-info-panel--bold-text">
+                {{ userInfo.userId }}
+            </label>
+        </div>
+    </div>
+</div>

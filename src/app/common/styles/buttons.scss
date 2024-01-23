@@ -1,0 +1,33 @@
+.button {
+  height: 50px;
+  border-radius: .7em;
+  font-size: 1.1em;
+  font-weight: 600;
+  padding: 1em 2em 1em 2em;
+  border: none;
+  box-shadow: none;
+  color: #fff;
+  user-select: none;
+
+  &--accept {
+    background-color: #4C54F4;
+  }
+
+  &--success {
+    background-color: #249F5D;
+  }
+
+  &--error {
+    background-color: #FC5A5A;
+  }
+
+  &--warning {
+    background-color: #FCCA00;
+    color: black;
+  }
+
+  &:hover {
+    opacity: .7;
+    cursor: pointer;
+  }
+}

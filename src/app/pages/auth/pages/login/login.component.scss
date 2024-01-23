@@ -1,0 +1,66 @@
+:host {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+
+  .login-panel {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    min-width: 250px;
+
+    > img {
+      margin: 0 auto;
+    }
+
+    &__password-field {
+      position: relative;
+
+      > input {
+      }
+
+      > span {
+        width: 30px;
+        height: 20px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        transform: translateY(-50%);
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &.--hide {
+          background-image: url('/assets/png/eye.png');
+        }
+
+        &.--open {
+          background-image: url('/assets/png/Vector.png');
+        }
+
+        &:hover {
+          cursor: pointer;
+          opacity: .5;
+        }
+      }
+    }
+
+    &__password-actions-panel {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      > label {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &__action-button-panel {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

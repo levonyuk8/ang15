@@ -1,0 +1,11 @@
+<div class="toast-list-panel">
+    <ng-container *ngFor="let toast of currentToasts$ | async" >
+        <app-toast
+                @appToastAnimation
+                [toast]="toast"
+                [onMouseOver]="onMouseOver$"
+                [onMouseLeave]="onMouseLeave$"
+        ></app-toast>
+    </ng-container>
+</div>
+

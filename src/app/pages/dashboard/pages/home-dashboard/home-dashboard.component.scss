@@ -1,0 +1,24 @@
+:host {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  * {
+    display: block;
+  }
+
+  .dashboard-panel {
+    &__message-input {
+      max-width: 40vw;
+    }
+
+    &__action-buttons-panel {
+      display: flex;
+      flex-direction: row;
+
+      > button:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+}

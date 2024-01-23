@@ -1,0 +1,30 @@
+<div class="dashboard-panel">
+    <app-user-info [userInfo]="authService.User"></app-user-info>
+    <label class="dashboard-panel__message-label mt-32 mb-16">Сообщение</label>
+    <input class="dashboard-panel__message-input input mb-24" placeholder="текст сообщения!" [formControl]="message">
+    <div class="dashboard-panel__action-buttons-panel">
+        <button appShowToast
+                [message]="'Сообщение об ошибке'"
+                [type]="ToastTypes.Error"
+                class="button button--error">Ошибка
+        </button>
+        <button appShowToast
+                [message]="'Пердупредительное сообщение'"
+                [type]="ToastTypes.Warning"
+                class="button button--warning">Предупреждение
+        </button>
+        <button appShowToast
+                [message]="'Сообщение об успехе'"
+                [type]="ToastTypes.Success"
+                class="button button--success">Успех
+        </button>
+        <button appShowToast
+                [message]="message.value"
+                [type]="ToastTypes.Info"
+                [customIconUrl]="'./assets/png/test48.png'"
+                class="button button--accept">Сообщение
+        </button>
+    </div>
+</div>
+
+

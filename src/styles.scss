@@ -1,0 +1,29 @@
+@import "./app/common/styles/buttons";
+@import "./app/common/styles/inputs";
+@import "./app/common/styles/label-text";
+@import "./app/common/styles/margin-padding";
+
+html, body, app-root {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+app-root {
+  padding: 2rem 2rem;
+  min-width: 1366px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1366px) {
+  body {
+    overflow-x: scroll;
+    //...
+  }
+}

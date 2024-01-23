@@ -1,0 +1,9 @@
+<div [ngClass]="['c-toast-panel', 'c-toast-panel--'+toast?.type]">
+    <span class="c-toast-panel__close-icon" (click)="onClose()">&#10006;</span>
+    <div class="c-toast-panel__icon">
+        <span *ngIf="!toast?.iconUrl" class="c-toast-panel__default-icon">&#33;</span>
+        <img *ngIf="toast?.iconUrl" [ngSrc]="toast.iconUrl" [width]="100" [height]="100" class="c-toast-panel__custom-icon" >
+    </div>
+
+  <span class="c-toast-panel__message">{{ toast.message ? toast.message : 'Увы сегодня без текста!!'}}</span>
+</div>

@@ -1,0 +1,25 @@
+:host {
+  display: flex;
+  flex-direction: row;
+
+  .user-info-panel {
+    display: flex;
+    align-items: center;
+
+    &__avatar {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+
+      > img {
+        border-radius: 50%;
+      }
+    }
+
+    &--bold-text {
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1rem;
+    }
+  }
+}

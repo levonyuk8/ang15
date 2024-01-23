@@ -1,0 +1,32 @@
+<form class="login-panel" [formGroup]="loginForm" (ngSubmit)="login()">
+    <img  alt="''" src="./assets/png/Logo.png" width="100" height="69">
+
+    <label class="title-text mt-96 mb-8">Добро пожаловать</label>
+    <label class="description-text mb-40 ">Авторихуйтесь чтобы продолжить</label>
+
+    <div class="login-panel__login-field">
+        <label class="field-text mb-16">Логин*</label>
+        <input class="input mb-24" placeholder="mail@simmmple.com" formControlName="login">
+    </div>
+
+    <div class="login-panel__password-field">
+        <label class="field-text mb-16">Пароль*</label>
+        <input class="input mb-24"
+               [type]="isShowPassword ? 'text' : 'password'"
+               placeholder="Минимум 8 символов"
+               formControlName="password">
+        <span class="login-panel__show-password-icon"
+              [ngClass]="isShowPassword ? '--hide' : '--open'"
+              (click)="isShowPassword = !isShowPassword">
+        </span>
+    </div>
+
+    <div class="login-panel__password-actions-panel mb-32">
+        <label class="field-text"> <input type="checkbox" [formControl]="isRememberMe">Запомнить</label>
+        <label class="link-text">Забыли пароль?</label>
+    </div>
+
+    <div class="login-panel__action-button-panel">
+        <button type="submit" class="button button--accept">Войти</button>
+    </div>
+</form>

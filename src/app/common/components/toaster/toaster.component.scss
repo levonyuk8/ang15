@@ -1,0 +1,20 @@
+:host {
+  position: absolute;
+  top: 70px;
+  right: 70px;
+  z-index: 99;
+  min-height: 70vh;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.toast-list-panel {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  flex-direction: column;
+
+  > app-toast {
+    margin-bottom: 10px;
+  }
+}
